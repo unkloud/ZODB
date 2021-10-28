@@ -5,6 +5,9 @@
 5.6.1 (unreleased)
 ==================
 
+- Fix ``TypeError: can't concat str to bytes`` when running fsoids.py script with Python 3.
+  See `issue 350 <https://github.com/zopefoundation/ZODB/issues/350>`_.
+
 - Readd transaction size information to ``fsdump`` output;
   adapt `fsstats` to ``fsdump``'s exchanged order for ``size`` and ``class``
   information in data records;
@@ -18,6 +21,8 @@
   IO. See `PR 340 <https://github.com/zopefoundation/ZODB/pull/340>`_.
 
 - Require Python 3 to build the documentation.
+
+- Fix deprecation warnings occurring on Python 3.10.
 
 
 5.6.0 (2020-06-11)
